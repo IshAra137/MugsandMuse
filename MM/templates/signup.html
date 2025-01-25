@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+body{
+    font-family: verdana;
+    background: linear-gradient(to bottom, #a88361, #e4c2a1, #d7ad87);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.nah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    background-color:black;
+    color: #fff;
+    border: 3px solid white;
+    padding: 7px 20px;
+    margin: 17px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+}
+
+.button:hover {
+    background-color:brown;
+    transform: scale(1.1);
+
+}
+.input-field{
+    width: 90%;
+    padding: 10px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    outline: none;
+}
+.input-field::placeholder {
+    color: black;
+}
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+form{
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0 rgb(223, 235, 223);
+}
+.account{text-align:center;
+font-size: 9px;
+}
+
+
+ </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="nah">
+        <form method="POST" action="">
+<h5 style="text-align:center;"> Register</h5>
+           {% csrf_token %}<br>
+
+            <input class="input-field" type="text" name="name1" placeholder="firstname" required><br>
+            <input class="input-field" type="text" name="name2" placeholder="lastname" required><br>
+            <input class="input-field" type="text" name="name3" placeholder="place" required><br>
+            <input class="input-field" type="number" name="name4" placeholder="mobile no." required><br>
+            <input class="input-field" type="email" name="name5" placeholder="email" required><br>
+            <input class="input-field" type="text" name="name6" placeholder="Username" required><br>
+            <input class="input-field" type="password" name="name7" placeholder="Password" required><br>
+
+
+            <div class="button-center">
+                <button class="button" type="submit">Register</button>
+ </div>
+
+ <div class="account">
+<p> Already have an account! <a href="{% url 'log_in' %}">Login</a>
+</div>
+
+</form>
+</div>
+
+</body>
+</html>

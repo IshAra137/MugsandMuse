@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             header.a {
+    color: #a3966a;
+    text-align: left;
+    padding: 5px;
+    background-color:#d4e1df;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Avenir light;
+    font-size:20px;
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0,2);
+
+}
+
+/*navigation*/
+   nav {
+    background-color: #623528;
+    padding: 10px;
+    text-align: right;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+ /*body*/
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir light;
+    background-color:#d9a883;
+
+    color: #333;
+}
+
+       .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+        }
+
+        
+        .gallery .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+         footer {
+            background-color: #623528;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+</style>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    </head>
+    <body>
+ <header class="a">
+    <h3>Mugs&Muse</h3>
+    </header>
+
+<!--navigation bar -->
+
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'menu_view' %}">menu</a>
+    <a href="{% url 'our_story' %}">Our story</a>
+    <a href="{% url 'userproductdata' %}">shop</a>
+</nav>
+
+
+<div class="gallery">
+    <!-- Image 1 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/e6/98/c8/e698c8b96544944f5d55278d6720d610.jpg " alt="Image 1">
+    </div>
+
+    <!-- Image 2 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/d9/71/be/d971be6ede3889d3a6ef8925425f18d4.jpg" alt="Image 2">
+    </div>
+
+    <!-- Image 3 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/ab/7e/59/ab7e59d0407235f2be672d4445e91a79.jpg" alt="Image 3">
+    </div>
+
+    <!-- Image 4 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/af/8e/cf/af8ecf7ce725fe704e3a4d1098ebfb79.jpg" alt="Image 4">
+    </div>
+
+    <!-- Image 5 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/f3/c7/a3/f3c7a30907fa04bb680274ef2d678ab1.jpg" alt="Image 5">
+    </div>
+
+    <!-- Image 6 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/80/23/40/8023401499bacdd49f0360d4c88a3015.jpg" alt="Image 6">
+    </div>
+
+    <!-- Image 7 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/a1/8e/16/a18e1653db8a8a07d3c5332378091b5f.jpg" alt="Image 7">
+    </div>
+
+    <!-- Image 8 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/736x/25/dd/92/25dd926ed097182cfc62d71b1bf5cd11.jpg" alt="Image 8">
+    </div>
+ <!-- Image 5 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/736x/37/dc/22/37dc22f2fe2696f1dc48c8fabe87e613.jpg " alt="Image 5">
+    </div>
+
+    <!-- Image 6 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/57/1d/b7/571db7283e7152bc41f3a4115ad97007.jpg " alt="Image 6">
+    </div>
+
+    <!-- Image 7 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/e1/9b/7e/e19b7eb44f954d8c3535d11b574ee3b9.jpg" alt="Image 7">
+    </div>
+
+    <!-- Image 8 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/2b/b0/9a/2bb09ad358744af3a2c72acfddbfe37c.jpg " alt="Image 8">
+    </div>
+ <!-- Image 5 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/34/2c/0f/342c0fec622b09e74958b97720b6fac6.jpg " alt="Image 5">
+    </div>
+
+    <!-- Image 6 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/4d/6f/09/4d6f0939d16fb2bc8e617ff927a1372a.jpg" alt="Image 6">
+    </div>
+
+    <!-- Image 7 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/35/e9/9a/35e99a10b6b320839432561928d517f6.jpg" alt="Image 7">
+    </div>
+
+    <!-- Image 8 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/83/f8/20/83f820d1f7c2dd83277768579ee3c0b0.jpg" alt="Image 8">
+    </div>
+ <!-- Image 5 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/37/ef/6a/37ef6a1f45d14ca7ea40498d311c2844.jpg " alt="Image 5">
+    </div>
+
+    <!-- Image 6 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/8a/26/69/8a2669db14b30abe7e00105435165741.jpg " alt="Image 6">
+    </div>
+
+    <!-- Image 7 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/e9/80/3f/e9803f7a2ef4205eba77d45f997ef01a.jpg " alt="Image 7">
+    </div>
+
+    <!-- Image 8 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/85/b9/18/85b918bf21cc2e96e0318c88995e357f.jpg " alt="Image 8">
+    </div>
+ <div class="image-container">
+        <img src="https://i.pinimg.com/474x/ad/f0/34/adf034e57e178e50772f0a422132ecb6.jpg  " alt="Image 6">
+    </div>
+
+    <!-- Image 7 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/97/72/9d/97729df17a69053d316700c918d8605c.jpg " alt="Image 7">
+    </div>
+
+    <!-- Image 8 -->
+    <div class="image-container">
+        <img src=" https://i.pinimg.com/474x/e2/dc/73/e2dc73aa5f9033c1bde2e8d309aa5a70.jpg " alt="Image 8">
+    </div>
+
+ <div class="image-container">
+        <img src="https://i.pinimg.com/474x/44/95/2c/44952c4763a4c6bc28370f1d649e3670.jpg" alt="Image 6">
+    </div>
+
+    <!-- Image 7 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/8a/1b/5f/8a1b5f386bfff734171e613a794c2d83.jpg" alt="Image 7">
+    </div>
+
+    <!-- Image 8 -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/474x/24/e9/31/24e93199064c1f17163c0e2375e360b4.jpg" alt="Image 8">
+    </div>
+
+</div>
+<footer>
+    <p>&copy; 2024 Mugs&Muse. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>

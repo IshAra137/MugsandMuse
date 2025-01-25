@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+  </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container=fluid">
+
+<table align="right">
+<form action="" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <tr>
+  <th>  </th>
+
+    <a href="http://127.0.0.1:8000/" class="btn btn-primary"> Home </a>
+  </tr>
+  <tr>
+  <td align="center" colspan="2">
+
+  </tr>
+  </form>
+  </table>
+
+
+
+
+<table class="table  table-bordered " >
+  <tr>
+  <th >Productname</th>
+   <th width="20%">Image</th>
+  <th>Quantity</th>
+  <th>Unitprice</th>
+  </tr>
+
+
+
+  {% for i in allproductkey %}
+<tr>
+
+  <td align="center">{{i.Productname}}</td>
+  <td align="center"><img src="{{i.Image.url}}" height="25%" width="35%"}}></td>
+  <td>{{i.Quantity}}</td>
+  <td>{{i.Unitprice}}</td>
+
+  <td><a href="/path7/{{i.id}}">Edit</a></td>
+  <td><a href="/path10/{{i.id}}">Delete</a></td>
+  </tr>
+  {% endfor %}
+
+</table>
+
+
+</div>
+</body>
+</html>

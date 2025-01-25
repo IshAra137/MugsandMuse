@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header.a {
+    color: #a3966a;
+    text-align: left;
+    padding: 5px;
+    background-color:#d4e1df;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Avenir light;
+    font-size:20px;
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0,2);
+
+}
+
+/*navigation*/
+   nav {
+    background-color: #623528;
+    padding: 10px;
+    text-align: right;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+ /*body*/
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir light;
+    background-color:#d9a883;
+
+    color: #333;
+}
+
+ .container {
+            margin: 40px auto;
+            max-width: 900px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #623528;
+        }
+
+        .schedule ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .schedule ul li {
+            background-color: #f0ebe4;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .schedule ul li span {
+            margin-right: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            background-color: #623528;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+
+</style>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    </head>
+    <body>
+ <header class="a">
+    <h3>Mugs&Muse</h3>
+    </header>
+
+<!--navigation bar -->
+
+<nav>
+   <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'menu_view' %}">menu</a>
+    <a href="{% url 'our_story' %}">Our story</a>
+   <a href="{% url 'userproductdata' %}">shop</a>
+
+</nav>
+
+<div class="container">
+    <section>
+        <h2 class="section-title">About the Workshop</h2>
+        <p>
+            Join us for an exciting and creative workshop where you can enjoy two delightful activities:
+            <strong>Mug Painting</strong> and <strong>Coffee Making</strong>. This workshop is perfect for coffee
+            enthusiasts and art lovers alike. Learn the secrets of brewing a delicious cup of coffee and unleash your
+            creativity with custom mug designs to take home!
+        </p>
+    </section>
+
+    <section class="schedule">
+        <h2 class="section-title">Workshop Schedule</h2>
+        <ul>
+            <li>
+                <span>10:00 AM - 11:30 AM:</span> Mug Painting Session
+            </li>
+            <li>
+                <span>11:30 AM - 12:00 PM:</span> Coffee Break with Snacks
+            </li>
+            <li>
+                <span>12:00 PM - 1:30 PM:</span> Coffee Making Masterclass
+            </li>
+            <li>
+                <span>1:30 PM - 2:00 PM:</span> Showcase & Wrap-up
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">Highlights</h2>
+        <ul>
+            <li>Create your own custom hand-painted mug to take home.</li>
+            <li>Learn the art of brewing coffee from professional baristas.</li>
+            <li>Enjoy a coffee tasting session with snacks provided.</li>
+            <li>Connect with fellow coffee lovers and creatives in a cozy environment.</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Mugs&Muse. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>

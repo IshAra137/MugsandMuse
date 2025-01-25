@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             header.a {
+    color: #a3966a;
+    text-align: left;
+    padding: 5px;
+    background-color:#d4e1df;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Avenir light;
+    font-size:20px;
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0,2);
+
+}
+
+/*navigation*/
+   nav {
+    background-color: #623528;
+    padding: 10px;
+    text-align: right;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+ /*body*/
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir light;
+    background-color:#d9a883;
+
+    color: #333;
+}
+section {
+            padding: 20px;
+            margin: 20px;
+        }
+        .menu-category {
+            margin-bottom: 30px;
+        }
+        .menu-item {
+            margin: 10px 0;
+        }
+
+/* card*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between cards */
+      justify-content: center; /* Center horizontally */
+      align-items: center;     /* Center vertically */
+      flex-wrap: wrap;         /* Allows wrapping to a new row */
+  }
+
+  /* Style for the cards */
+  .card {
+    width: 150px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide overflow if content exceeds fixed size */
+    border-radius: 8px; /* Optional: rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#E0F7FA;
+  }
+
+  /* Optional: For consistent font size and alignment */
+  .card h3 {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 10px;
+    margin: 0;
+    text-align: center;
+  }
+ footer {
+            background-color: #623528;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+</style>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    </head>
+    <body>
+ <header class="a">
+    <h3>Mugs&Muse</h3>
+    </header>
+
+<!--navigation bar -->
+
+<nav>
+   <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'menu_view' %}">menu</a>
+    <a href="{% url 'our_story' %}">Our story</a>
+    <a href="{% url 'userproductdata' %}">shop</a>
+    
+</nav>
+    <h1 style="text-align:center;">MENU</h1>
+
+   
+
+
+    <section id="caffeine-drinks" class="menu-category">
+    <h2 >Caffeine Drinks</h2>
+    <div class="menu-item">
+<div class="card-container">
+
+      <div class="card">
+     <img src="https://i.pinimg.com/736x/99/fd/0c/99fd0c8c774db4a483ebb6dd5f416525.jpg" alt="img">
+       <h3 class="name"><b> cocoa</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/20/fe/91/20fe91bc8c396ff2d9ce3f783e189993.jpg " alt="img">
+       <h3 class="name"><b> Latte</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/736x/2b/dd/32/2bdd322d85c3ada27e052c5bc9342be7.jpg " alt="img">
+       <h3 class="name"><b> Americano</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+    <div class="card">
+     <img src="https://i.pinimg.com/474x/aa/fb/a1/aafba1d6a97fbec25c8493b0516cf863.jpg " alt="img">
+       <h3 class="name"><b> coffee</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src=" https://i.pinimg.com/474x/97/f7/7f/97f77f9169d219d6c1e20a92aff62fc1.jpg" alt="img">
+       <h3 class="name"><b> choco latte</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/41/a7/77/41a777529c816507b69b6609389cf2f3.jpg " alt="img">
+       <h3 class="name"><b> Cream cocoa</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/736x/2a/53/da/2a53dac4072f4afc930aaa5f613786c2.jpg " alt="img">
+       <h3 class="name"><b> flora cream</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/736x/3f/64/73/3f64732607b99c6976fef409d73ed7ba.jpg " alt="img">
+       <h3 class="name"><b> Iced Americano</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src=" https://i.pinimg.com/474x/7c/75/f9/7c75f977a85294631a225ec3d9fc4191.jpg" alt="img">
+       <h3 class="name"><b> Dalgona coffee</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src="https://i.pinimg.com/474x/8a/ba/06/8aba06ea71ced731700beddd4f9c657e.jpg " alt="img">
+       <h3 class="name"><b> Iced drip coffee</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src=" https://i.pinimg.com/736x/f5/05/ba/f505ba1bac8538c2db6cdbb7f4a57cbc.jpg" alt="img">
+       <h3 class="name"><b> Cream cofi</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/e1/9f/35/e19f35ef45e77db828f6222ffeb41945.jpg " alt="img">
+       <h3 class="name"><b> coffee</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src=" https://i.pinimg.com/474x/7a/b7/e9/7ab7e9475afd05d2aab0b5ea7d3b6d24.jpg" alt="img">
+       <h3 class="name"><b> Cafe lattè</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src="https://i.pinimg.com/474x/52/4b/ed/524bede367627cfbdf3de54c15ebdfda.jpg " alt="img">
+       <h3 class="name"><b> Hot choco</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section id="non-caffeine-drinks" class="menu-category">
+    <h2>Non-Caffeine drinks</h2>
+    <div class="menu-item">
+<div class="card-container">
+
+      <div class="card">
+     <img src=" https://i.pinimg.com/736x/b3/93/b3/b393b3919ac26d42843852a95dc7a8f4.jpg" alt="img">
+       <h3 class="name"><b> Pink Tea</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/736x/a9/93/33/a99333a23751be3919ab5b7d7e19e612.jpg " alt="img">
+       <h3 class="name"><b> cloud tea</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src=" https://i.pinimg.com/474x/fc/49/1a/fc491aa35fb8e95b262661b82062eb8d.jpg" alt="img">
+       <h3 class="name"><b> Cocktail</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/42/97/05/429705386daadeb92e6730edc9894104.jpg " alt="img">
+       <h3 class="name"><b> Mocha</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/ad/b6/46/adb64688e322c841b6aa5cc71f1b7e31.jpg " alt="img">
+       <h3 class="name"><b> Peachy</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src=" https://i.pinimg.com/474x/4f/17/50/4f1750b902618fcbf1a7826340f7d945.jpg" alt="img">
+       <h3 class="name"><b> Apricot</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src=" https://i.pinimg.com/736x/7c/51/6a/7c516ac79233ecee59899cff9c535ac4.jpg" alt="img">
+       <h3 class="name"><b> Berry shake</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src="https://i.pinimg.com/736x/2f/85/64/2f8564b3bc0e18bd568ac869cb5301d0.jpg " alt="img">
+       <h3 class="name"><b> cocktail</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/736x/ee/59/3d/ee593d92c3ae3debc6497defe5ec15f3.jpg " alt="img">
+       <h3 class="name"><b> cherry coctail</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src=" https://i.pinimg.com/474x/f3/10/85/f31085af66b5cd61c9ae41b5d0d75449.jpg" alt="img">
+       <h3 class="name"><b> banana shake</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+    <div class="card">
+     <img src="https://i.pinimg.com/474x/c0/85/0e/c0850eb5242a11eacf7af94307e811e7.jpg " alt="img">
+       <h3 class="name"><b> strawberry</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src=" https://i.pinimg.com/474x/b9/a4/6c/b9a46c4a9bb3815303b5a5c3540e3791.jpg" alt="img">
+       <h3 class="name"><b> rainbow tale</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+    <div class="card">
+     <img src="https://i.pinimg.com/474x/18/d4/90/18d49023858cef7a5a0c320f801c9e75.jpg " alt="img">
+       <h3 class="name"><b> Lime tale</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src=" https://i.pinimg.com/736x/aa/1f/b4/aa1fb43b5e56e95a6c5cc8ded819689f.jpg" alt="img">
+       <h3 class="name"><b> peach bow</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+
+    </div>
+    </div>
+</section>
+
+<section id="pastries" class="menu-category">
+    <h2>Pastries</h2>
+    <div class="menu-item">
+<div class="card-container">
+
+      <div class="card">
+     <img src="https://i.pinimg.com/474x/f5/eb/91/f5eb9109f4fc15b8cc7bef548e51ebd9.jpg " alt="img">
+       <h3 class="name"><b> Macaron</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/03/dd/b2/03ddb2cca748c88d3ee31200dc67ef0e.jpg " alt="img">
+       <h3 class="name"><b> Mint ban</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/05/4f/75/054f75621452641432771cc6879e4cc3.jpg " alt="img">
+       <h3 class="name"><b> Berry bit</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/9a/49/39/9a4939ec95319bc8c5f88944077f7a2a.jpg " alt="img">
+       <h3 class="name"><b> crèpe</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src=" https://i.pinimg.com/736x/d8/dc/48/d8dc482cb56760ede1c7669bcc60e45c.jpg" alt="img">
+       <h3 class="name"><b> churro</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+    <div class="card">
+     <img src="https://i.pinimg.com/474x/9b/f5/3f/9bf53f49882aa8835ff5a0b93c1372f0.jpg " alt="img">
+       <h3 class="name"><b> donut</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src=" https://i.pinimg.com/474x/a4/93/5e/a4935e2afad484955ffc3b31c0db9715.jpg" alt="img">
+       <h3 class="name"><b> tiramisu</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/b9/37/be/b937be5d179418ce1ea0959eb78fb402.jpg " alt="img">
+       <h3 class="name"><b> souffle cake</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src="https://i.pinimg.com/474x/52/8b/ca/528bca85ee52a6c2b0c34e5c56730b11.jpg " alt="img">
+       <h3 class="name"><b> Berry cookie</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src="https://i.pinimg.com/474x/24/32/e5/2432e50948a411565581c16ceda414fd.jpg " alt="img">
+       <h3 class="name"><b> Puff cremé</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src="https://i.pinimg.com/474x/21/92/4e/21924ea4f04ef4b32be907e5fe724a18.jpg " alt="img">
+       <h3 class="name"><b> shortcake</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+<div class="card">
+     <img src=" https://i.pinimg.com/474x/90/a5/a7/90a5a7097bbb3048698ff211de5ade26.jpg" alt="img">
+       <h3 class="name"><b> sky bite</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src=" https://i.pinimg.com/474x/48/ad/c3/48adc36fbc62aa982b0d636fb2c99c65.jpg" alt="img">
+       <h3 class="name"><b> crème burlè</b></h3>
+
+                            <p class="title">cafe</p>
+      </div><div class="card">
+     <img src="https://i.pinimg.com/474x/50/89/52/50895292bf230cd6dbd525fa0e45a8a4.jpg " alt="img">
+       <h3 class="name"><b> cherry bite</b></h3>
+
+                            <p class="title">cafe</p>
+      </div>
+    </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 Mugs&Muse. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>

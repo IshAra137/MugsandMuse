@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background: linear-gradient(to bottom,#F5F5DC,#d9a883);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background to dim */
+        }
+        
+        .popup-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+        
+        h1 {
+            color: #A38D6D ;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            background-color:#d9534f;
+            color: #fff;
+            border: 3px solid white;
+            padding: 7px 20px;
+            margin: 17px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration:none; /* remove link style */
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: brown;
+            transform: translateY(-2px);
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Login Failed</title>
+</head>
+<body>
+    <div class="popup-box">
+        <h1>Login Failed</h1>
+        <button class="button">
+            <a href="{% url 'log_in' %}">Try Again</a>
+        </button>
+    </div>
+</body>
+</html>

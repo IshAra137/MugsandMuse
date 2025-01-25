@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             header.a {
+    color: #a3966a;
+    text-align: left;
+    padding: 5px;
+    background-color:#d4e1df;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Avenir light;
+    font-size:20px;
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0,2);
+
+}
+
+/*navigation*/
+   nav {
+    background-color: #623528;
+    padding: 10px;
+    text-align: right;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+ /*body*/
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir light;
+    background-color:#d9a883;
+    color: #333;
+}
+
+ section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #623528;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .about-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .mission, .vision, .history {
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background-color: #623528;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #a3966a;
+        }
+
+   footer {
+            background-color: #623528;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+
+
+</style>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    </head>
+    <body>
+ <header class="a">
+    <h3>Mugs&Muse</h3>
+    </header>
+
+<!--navigation bar -->
+
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'menu_view' %}">menu</a>
+    <a href="{% url 'our_story' %}">Our story</a>
+    <a href="{% url 'userproductdata' %}">shop</a>
+
+</nav>
+    <h1 style="text-align:center;"> Our story</h1>
+<section class="mission">
+    <h2 class="section-title">Our Mission</h2>
+    <p class="section-content">
+        At Mugs & Muse, we believe in the power of a great cup of coffee to inspire creativity and foster meaningful conversations. 
+        Our mission is to provide a welcoming space where people can gather, relax, and enjoy premium coffee brewed with passion and care. 
+        Whether you're here to work, unwind, or connect with friends, we’re dedicated to creating an environment that sparks creativity in everything we do.
+    </p>
+</section>
+
+<section class="vision">
+    <h2 class="section-title">Our Vision</h2>
+    <p class="section-content">
+        Our vision is to be more than just a cafe – we aspire to be a community hub that nurtures the minds and spirits of every guest 
+        who walks through our door. We aim to bring people together through shared experiences, delicious beverages, and an inspiring atmosphere.
+    </p>
+</section>
+
+<section class="history">
+    <h2 class="section-title">Our Story</h2>
+    <p class="section-content">
+        Mugs & Muse was born from a shared love of great coffee and a desire to create a space that encourages both relaxation and inspiration. 
+        The concept started with the simple idea of combining two of life’s greatest joys – coffee and creativity. 
+        Our founders, a group of passionate coffee enthusiasts and artists, wanted to craft a space where people could come together, 
+        sip on expertly brewed coffee, and let their creativity flow.
+    </p>
+    <img src=" https://i.pinimg.com/736x/26/d1/9f/26d19fd6e7cde1f02ab37d717666db2b.jpg" alt="Cafe Interior" class="about-image">
+    <p class="section-content">
+        Today, Mugs & Muse is a thriving spot known for its cozy ambiance, friendly staff, and expertly brewed coffees. 
+        Whether you're an aspiring writer, a student, or someone who just wants to relax, Mugs & Muse is here to help you find your muse.
+    </p>
+</section>
+
+<section class="call-to-action">
+    <h2 class="section-title">Join Us for a Coffee!</h2>
+    <p class="section-content">
+        Come by and experience the magic of Mugs & Muse. Take a seat, enjoy a freshly brewed cup of coffee, and let your imagination run wild.
+    </p>
+    <a href="/menu" class="cta-button">View Our Menu</a>
+</section>
+<footer>
+    <p>&copy; 2024 Mugs&Muse. All rights reserved.</p>
+</footer>
+    </body>
+</html>

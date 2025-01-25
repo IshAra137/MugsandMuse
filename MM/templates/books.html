@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>  header.a {
+    color: #fefefe;
+    text-align: left;
+    padding: 5px;
+    background-color: #a57844;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Avenir light;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0,0.5);
+
+}
+
+/*navigation*/
+   nav {
+    background-color: #623528;
+    padding: 10px;
+    text-align: right;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+ /*body*/
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir light;
+    background-color:#d9a883;
+    color: #333;
+}
+
+.container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            justify-items: center;
+        }
+
+        .book-card {
+            background-color: beige;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 180px;
+            text-align: center;
+        }
+
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        .book-card .card-content {
+            padding: 10px;
+        }
+
+        .book-card h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .book-card p {
+            font-size: 10px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .book-card .author {
+            font-size: 12px;
+            color: #777;
+        }
+
+        footer {
+            background-color: #623528;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+</style>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    </head>
+    <body>
+ <header class="a">
+    <h3>Mugs&Muse</h3>
+    </header>
+
+<!--navigation bar -->
+
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'menu_view' %}">menu</a>
+    <a href="{% url 'our_story' %}">Our story</a>
+    <a href="{% url 'userproductdata' %}">shop</a>
+    
+</nav>
+    <h1 style="text-align:center;">Available  Books</h1>
+<div class="container">
+    <!-- Book 1 -->
+    <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/71ctUApaY8L._SL1250_.jpg " alt="Book 1">
+        <div class="card-content">
+            <h4>The Folk of the Air Trilogy</h4>
+            <p class="author">By Holly Black</p>
+           
+        </div>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="book-card">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1683915876i/91274427.jpg " alt="Book 2">
+        <div class="card-content">
+            <h4> What You Are Looking For Is in the Library</h4>
+            <p class="author">By Michiko Aoyama</p>
+            
+            
+        </div>
+    </div>
+<div class="book-card">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553624975i/26032912.jpg" alt="Book 3">
+        <div class="card-content">
+            <h4>The Queen of Nothing </h4>
+            <p class="author">By Holly Black</p>
+            
+            
+        </div>
+    </div>
+
+    <!-- Book 4 -->
+    <div class="book-card">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1704153539i/44421460.jpg" alt="Book 4">
+        <div class="card-content">
+            <h4> Before the Coffee Gets Cold</h4>
+            <p class="author">By Toshikazu Kawaguchi </p>
+            
+                   </div>
+    </div>
+
+<div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/87/The_Midnight_Library.jpg" alt="Book 5">
+        <div class="card-content">
+            <h4>The Midnight Library</h4>
+            <p class="author">By Matt Haig</p>
+           
+            
+        </div>
+    </div>
+
+    <!-- Book  -->
+    <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/81b3WvTiPWL._SL1500_.jpg " alt="Book 6">
+        <div class="card-content">
+            <h4> I Want to Die But I Want to Eat Tteokpokki</h4>
+            <p class="author">By Baek Se-hee</p>
+            
+           
+        </div>
+    </div>
+
+
+    <!-- Book 3 -->
+    <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/27/Little_Forest_by_Daisuke_Igarashi_v1_cover.jpg" alt="Book 7">
+        <div class="card-content">
+            <h4>Little Forest</h4>
+            <p class="author">By Daisuke Igarashi</p>
+           
+                    </div>
+    </div>
+
+    <!-- Book 4 -->
+    <div class="book-card">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1688424684i/133938826.jpg " alt="Book 8">
+        <div class="card-content">
+            <h4>Welcome to the Hyunam-Dong Bookshop </h4>
+            <p class="author">By Hwang Bo-Reum </p>
+                       
+        </div>
+    </div>
+
+    <!-- Book 5 -->
+    <div class="book-card">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1695153543i/101158135.jpg " alt="Book 9">
+        <div class="card-content">
+            <h4>SPY×FAMILY  </h4>
+            <p class="author">By Tatsuya Endo</p>
+            
+            
+        </div>
+    </div>
+
+    <!-- Book 6 -->
+    <div class="book-card">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1610900883i/54189398.jpg" alt="Book 10">
+        <div class="card-content">
+            <h4> The Spanish Love Deception</h4>
+            <p class="author">By Elena Armas</p>
+            
+                   </div>
+    </div>
+  <!-- Book 5 -->
+    <div class="book-card">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1697079942i/132080146.jpg " alt="Book 9">
+        <div class="card-content">
+            <h4>The Lion, the Witch and the Wardrobe </h4>
+            <p class="author">By C.S. Lewis</p>
+            
+            
+        </div>
+    </div>
+  <!-- Book 5 -->
+    <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/The_Voyage_of_the_Dawn_Treader_poster.jpg " alt="Book 9">
+        <div class="card-content">
+            <h4> The Voyage of the Dawn Treader</h4>
+            <p class="author">By C.S. Lewis </p>
+            
+            
+        </div>
+    </div>
+  <!-- Book 5 -->
+    <div class="book-card">
+        <img src=" https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1627044952i/58613424.jpg" alt="Book 9">
+        <div class="card-content">
+            <h4> Harry Potter and the Goblet of Fire</h4>
+            <p class="author">By J.K. Rowling </p>
+            
+            
+        </div>
+    </div>
+ <div class="book-card">
+        <img src=" https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1702667113i/203858235.jpg" alt="Book 9">
+        <div class="card-content">
+            <h4>The Broken Ring </h4>
+            <p class="author">By Chacha Kim</p>
+            
+            
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Mugs&Muse. All rights reserved.</p>
+</footer>
+    </body>
+</html>

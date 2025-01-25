@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      header.a {
+    color: #a3966a;
+    text-align: left;
+    padding: 5px;
+    background-color:#d4e1df;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Avenir light;
+    font-size:20px;
+    text-shadow: 0.5px 0.5px 1.5px rgba(0, 0, 0, 2);
+
+}
+/*navigation*/
+   nav {
+    background-color: #623528;
+    padding: 10px;
+    text-align: right;
+    position:sticky; top:0;
+    backdrop-filter:blur(45px);
+    }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+ /*body*/
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir light;
+    background-color:#d9a883;
+
+    color: #333;
+}
+
+
+/*header*/
+header.b {
+    color: #507d4e;
+    background-color:#f5ebd6;
+    text-align: center;
+    padding: 20px 10px;
+    background-size: cover;
+    margin:0px ;
+
+}
+header.barista {
+    color: #333333;
+    background-color:#fefefe;
+    text-align: center;
+    padding: 50px 0;
+    background-size: cover;
+    margin:0px ;
+}
+
+
+/*box card*/
+.box-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    flex-wrap: nowrap; /* Allows wrapping if cards don't fit in one row */
+    justify-content: center; /* Center cards horizontally */
+    padding: 10px;
+    align-items:center;
+    margin:30px;
+
+}
+
+.box {
+    width: 150px; /* Card width */
+    height: 200px; /* Card height */
+    background-size: cover; /* Ensures the image covers the card */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Text color for contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Improves text readability */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevents content from spilling out */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns text to the bottom */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+header.c {
+    color: #507d4e;
+    background-color:#f5ebd6;
+    text-align: center;
+    padding: 20px 10px;
+    background-size: cover;
+
+}
+
+
+/*footer*/
+.footer {
+    background-color:#333333;
+    color: #fefefe;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info p,
+.others ul {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.others ul {
+    list-style: none;
+    padding: 0;
+}
+
+.others a {
+    color: #FFC0CB;
+    text-decoration: none;
+}
+
+ /* Banner styling */
+        .banner {
+            position: relative;
+            width: 100%;
+            max-height: 900px;
+            overflow: hidden;
+            transition: background-color 0.3s ease; / Transition for banner background color /
+        }
+
+        .banner img {
+            width: 100%;
+            filter:saturate(1.3);
+            object-fit: cover;
+
+        }
+
+        .banner-text {
+            position: absolute;
+             top: 34%;
+            left: 0%;
+            left: 5%;
+            font-family:Avenir light;
+            text-align: left;
+            color: #f5ebd6;
+            font-size: 45px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0,0.2);
+            opacity: 1;
+            transition: opacity 0.3s ease; / Hover effect /
+        }
+
+        .banner:hover .banner-text {
+            opacity: 1;
+        }
+.show-more {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.show-more:hover {
+    text-decoration: underline;}
+.moments {
+    text-decoration: none;
+    color: #507d4e;
+    font-weight: bold;
+    button-hover:
+}
+.moments:hover {
+    text-decoration: underline;}
+.brew {
+    text-decoration: none;
+    color: #B89D59;
+    font-weight: bold;
+}
+.brew:hover {
+    text-decoration: underline;
+}
+.os{
+    text-decoration: none;
+    color: #fefefe;
+    font-weight: bold;
+}
+.os:hover {
+    text-decoration: underline;
+}
+.events-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    flex-wrap: nowrap; /* Allows wrapping if cards don't fit in one row */
+    justify-content: space-between; /* Center cards horizontally */
+    padding: 60px;
+    align-items:center;
+
+.events {
+    width: 1000px; /* Card width */
+    height: 400px; /* Card height */
+    background-size: cover; /* Ensures the image covers the card */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Text color for contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Improves text readability */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevents content from spilling out */
+    padding: 1px;
+    display: flex;
+    cursor:pointer;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns text to the bottom */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.events:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+header.c {
+    color: #507d4e;
+    background-color:#f5ebd6;
+    text-align: center;
+    padding: 20px 10px;
+    background-size: cover;
+
+}
+.copyright {
+    background-color:#333333;
+    color: #fefefe;
+   }
+.workshop {
+    text-decoration: none;
+    color: #B89D59;
+    font-weight: bold;
+}
+.workshop:hover {
+    text-decoration: underline;
+}
+
+  </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- h1 -->
+<header class="a">
+    <h3>Mugs&Muse</h3>
+    </header>
+
+<!--navigation bar -->
+<nav>
+
+    <a href="{% url 'home' %}">Home</a>
+   <a href="{% url 'log_in' %}">menu</a>
+    <a href="{% url 'log_in' %}">Our story</a>
+    <a href="{% url 'log_in' %}">shop</a>
+  
+</nav>
+
+<!-- hero section[banner.img]-->
+ <div class="d1">
+ <div class="banner">
+        <img src="https://i.pinimg.com/736x/f5/c2/74/f5c2749460e4f0de61f601f9e8d69cd6.jpg" alt="Banner Image">
+        <div class="banner-text">
+<h2>Fiction and Flavour</h2>
+        <p style="font-size: 22px;">Savor a delicious treat and pair your perfectly brewed coffee with a book from our curated collection.
+            Find your next great read among our shelves,
+            carefully stocked with classics and contemporary bestsellers.
+            <br>Hope you enjoy!</p>
+       <a href="{% url 'log_in' %}" class="show-more"> Browse Our Shelves→</a>
+
+</div>
+    </div>
+</div>
+
+
+
+
+
+<!-- marquee -->
+<h4 style="color:brown"><b><marquee behavior="scroll" direction="left" scrollamount="11" >Open: Monday to sunday 8:00 am to 8:00 pm</marquee></b></h4>
+
+
+
+
+
+
+
+
+
+
+<!-- header -->
+<header class="b">
+  <h2> Mugs&Muse</h2>
+     <h4>Brewing memories, one cup at a time</h4>
+  <p>Mugs and muse are a timeless pair, inspiring creativity and warmth in those who seek it.<br>
+      Reading from a favorite book, with a steaming mug by your side, is a universal comfort that weaves memories into the fabric of life.
+      <br> In the stillness of a moment, with mug in hand and book in lap, the muse whispers secrets of the past, present, and future</p>
+
+
+</header>
+
+<!--box card-->
+ <div class="box-container">
+     <div class="box-container">
+    <a href="{% url 'log_in' %}" class="box" style="background-image: url('https://i.pinimg.com/736x/0f/7b/ea/0f7bea85cc7fb8d9917d3efc4c164ce3.jpg');">
+        <p>Caffeine drinks</p>
+    </a>
+    <a href="{% url 'log_in' %}" class="box" style="background-image: url('https://i.pinimg.com/736x/3f/f5/19/3ff519ae4e22c187e75bb7c6ca232b29.jpg');">
+        <p>Non Caffeine drinks</p>
+    </a>
+    <a href="{% url 'log_in' %}" class="box" style="background-image: url('https://i.pinimg.com/736x/98/68/de/9868de862006b4801c4e3d8c01c51532.jpg');">
+        <p>Pastries</p>
+    </a>
+</div>
+</div>
+
+<!--barista-->
+<header class="barista">
+     <h5> Espresso Yourself:Unleash Your Inner Barista </h5>
+  <p>Ready to perk up your coffee game?<br>
+      Join us for a latte fun and learn the secrets to crafting the perfect cup!
+     <br> Become a barista rockstar and brew up a storm!</p>
+<a href="{% url 'log_in' %}" class="brew">Brew Now</a>
+
+
+</header>
+
+<div class="events-container">
+    <div class="events" style="background-image: url('https://i.pinimg.com/736x/1b/bc/4e/1bbc4e6639842ff12f3aa68b0bc0dc09.jpg');">
+        <h4>Mug painting <br>workshop</h4>
+<p style="font-size: 12px;">Mug painting and customising workshop</p>
+        <a href="{% url 'log_in' %}" class="workshop">Grab a spot!</a>
+<!--redirect to details about upcoming events-->
+    </div>
+    <div class="events" style="background-image: url('https://i.pinimg.com/736x/62/7c/2b/627c2b860579829c0d66ee1707c058c5.jpg');">
+        <h4>Coffee Cupping<br>workshop</h4>
+<p style="font-size: 12px;">learn techniques for brewing and coffee cupping.</p>
+        <a href="{% url 'log_in' %}" class="workshop">I'm In!</a>
+<!--redirect to details about upcoming events-->
+    </div>
+</div>
+
+
+<header class="c">
+    <h1> spill the beans!</h1>
+    <p>Share your fave cafe moments with us!</p>
+    <a href="{% url 'log_in' %}" class="moments">moments</a>
+</header>
+
+<!-- our story -->
+<header class="osh" style="display:flex;align-items:center;gap:20px;padding:30px;max-width:1500px; background-color:#a9b494; justify-content:space-evenly;
+ ">
+
+    <div class="story_image">
+<img src="https://i.pinimg.com/736x/1b/05/e0/1b05e0e20f417491f4ac9b0ba25f9f4b.jpg" alt="story img" style=" max-width:300px;height:200px;border-radius:7px;">
+</div>
+    <div>
+<h2 style="  font-size: 2rem;margin-bottom:10px;"> Meet Mugs&Muse</h2>
+<p  style=" font-size: 1rem;margin-bottom:20px;"> Welcome to Muse and Mugs, where every sip and every page turn brings people together.<br> Learn more about us.</p>
+<a href="{% url 'log_in' %}" class="os">Our Story</a>
+</div>
+</header>
+
+<!-- footer 1 -->
+ <footer class="footer">
+<p>©️ 2024 Mugs&Muse. All rights reserved.</p>
+        <div class="contact-info">
+            <p>MyCafe<br>Autumn Tower<br>2nd Street 4th Ave<br>Norway</p>
+            <p>Email: mycafe@gmail.com</p>
+                    </div>
+
+
+    </footer>
+</body>
+</html>
